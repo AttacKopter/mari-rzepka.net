@@ -1,0 +1,52 @@
+div {
+
+    padding: 0px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.extra-wall {
+    border-right: 3px solid white;
+    align-self: center;
+    position: absolute;
+    top: 99px;
+    right: 0px;
+    height: 206px;
+}
+
+.whoami {
+    animation-duration: 2s;
+    font-size: 3em;
+    display: flex;
+
+    position: relative;
+    top: 0vh;
+    justify-content: center;
+}
+
+.balls {
+    position: relative;
+    top: -280px;
+    margin: 0;
+}
+
+.intro {
+    height: 500px;
+    position: relative;
+    top: -287px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+}
+
+.timeline {
+    height: 500px;
+    position: relative;
+    top: -287px;
+    border: 3px solid white;
+}

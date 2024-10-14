@@ -1,0 +1,106 @@
+.ActionBar {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@keyframes showBorder {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+.border {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    align-self: center;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 0;
+
+}
+
+.clickme {
+    color: gray;
+    font-size: 0.8em;
+    position: absolute;
+    left: 75px;
+    top: 76px;
+}
+
+.selected-border {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    align-self: center;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 100%;
+}
+
+.border:hover {
+    animation: showBorder 0.5s;
+    width: 100%;
+}
+
+h1 {
+    text-wrap: nowrap;
+    margin: 10px;
+    font-size: 3em;
+    line-height: 3em;
+    display: inline-block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h4 {
+    text-wrap: nowrap;
+    position: relative;
+    left: 10px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.subBar {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes showSubCategory {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes openSubCategory {
+    from {height: 20px;}
+    to {height: 200px;}
+}
+
+.closedSubCategory {
+    position: relative;
+    left: 100px;
+    width: 19%;
+    display: inline-block;
+    border-left: 3px solid white;
+    height: 25px;
+}
+
+.subCategory {
+    position: relative;
+    left: 100px;
+    width: 19%;
+    display: inline-block;
+    border-left: 3px solid white;
+    height: 25px;
+}
+
+.subCategory:hover {
+    animation: openSubCategory 0.5s;
+    height: 200px;
+}
+
+
